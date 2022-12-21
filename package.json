@@ -24,7 +24,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "yarn test && :",
+      "xo",
+      "jest --findRelatedTests",
       "prettier --single-quote --no-semi --write --no-editorconfig",
       "git add"
     ]
